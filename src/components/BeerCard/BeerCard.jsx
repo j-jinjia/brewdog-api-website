@@ -1,6 +1,8 @@
 import { React, useState } from "react";
 import "./BeerCard.scss";
 import ButtonViewMore from "../ButtonViewMore/ButtonViewMore";
+
+/** This component handles the rendering of a single card. It gets passed down props from AllBeers component. On clicking View More button, will show extra information about the beer and on clicking the Return button, will go back to tis original state.*/
 const BeerCard = (props) => {
   const {
     name,
@@ -31,7 +33,7 @@ const BeerCard = (props) => {
               Brew Year: <br /> {brewYear}
             </p>
             <p className="content__abv">
-              ABV: <br /> {abv}
+              ABV: <br /> {abv}%
             </p>
             <p className="content__ph">
               PH:
@@ -44,31 +46,25 @@ const BeerCard = (props) => {
       {!viewMore && (
         <>
           <div className="extra-content">
-            <p className="extra-content__descritpion">
-              Product description:
-              <br />
-              {description}
-            </p>
-
-            <p className="extra-content__ingredients">
-              Ingredients: <br />
-              {ingredients.join(", ")}
-            </p>
-
-            <p className="extra-content__food">
-              Food pairing: <br />
-              {food.join(", ")}
-            </p>
-
-            <p className="extra-content__tip">
-              Tips: <br />
-              {tip}
-            </p>
-            <ButtonViewMore
-              className="extra-content__button"
-              name="Return"
-              handleViewMore={handleClick}
-            />
+            <ul className="content-list">
+              <li>
+                <h3 className="content-list__title">Product Description</h3>
+                <p>{description}</p>
+              </li>
+              <li>
+                <h3 className="content-list__title">Ingredients</h3>
+                <p>The ingredients are : {ingredients.join(", ")}</p>
+              </li>
+              <li>
+                <h3 className="content-list__title">Food Pairing</h3>
+                <p>{food.join(" or ")}</p>
+              </li>
+              <li>
+                <h3 className="content-list__title">Tips</h3>
+                <p>{tip}</p>
+              </li>
+            </ul>
+            <ButtonViewMore name="Return" handleViewMore={handleClick} />
           </div>
         </>
       )}

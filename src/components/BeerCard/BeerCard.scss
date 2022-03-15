@@ -35,6 +35,11 @@
         height: fit-content;
         gap:1rem;
         padding:1rem;
+        .content-list{
+            .content-list__title{
+                background-color: blue;
+            }
+        }
     }
 
     
