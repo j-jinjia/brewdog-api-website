@@ -1,0 +1,15 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    .navigation__logo{
+        width:50px;
+        height: auto;
+
+    }
+    .navigation__faq{
+        cursor: pointer;
+    }
+}
