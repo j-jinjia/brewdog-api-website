@@ -4,7 +4,7 @@ import BeerCard from "../BeerCard/BeerCard";
 
 const AllBeers = ({ beerArr }) => {
   return (
-    <div className="beer-container">
+    <div className="card-container">
       {beerArr.map((beer) => {
         return (
           <BeerCard
@@ -13,6 +13,12 @@ const AllBeers = ({ beerArr }) => {
             tag={beer.tagline}
             brewYear={beer.first_brewed}
             image={beer.image_url}
+            abv={beer.abv}
+            ph={beer.ph}
+            description={beer.description}
+            ingredients={Object.keys(beer.ingredients)}
+            food={beer.food_pairing}
+            tip={beer.brewers_tips}
           />
         );
       })}

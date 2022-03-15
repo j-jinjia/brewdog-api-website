@@ -1,5 +1,29 @@
-.beer{
+.card{
+    background-color: grey;
+    margin:1rem;
+    width:300px;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-evenly;
     &__img{
-        width:20vw;
+        width:50px;
+        height:auto;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        width: 60%;
+        .content__name{
+            grid-column:2 span;
+            text-align: center;
+        }
+        .content__tag{
+            grid-column:2 span;
+            text-align: center;
+
+        }
     }
 }
