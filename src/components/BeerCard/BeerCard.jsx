@@ -43,13 +43,33 @@ const BeerCard = (props) => {
       )}
       {!viewMore && (
         <>
-          <div className="content">
-            <p className="content__descritpion">{description}</p>
-            <p className="content__ingredients">{ingredients.join(" ")}</p>
-            <p className="content__food">{food.join(" ")}</p>
-            <p className="content__tip">{tip}</p>
+          <div className="extra-content">
+            <p className="extra-content__descritpion">
+              Product description:
+              <br />
+              {description}
+            </p>
+
+            <p className="extra-content__ingredients">
+              Ingredients: <br />
+              {ingredients.join(", ")}
+            </p>
+
+            <p className="extra-content__food">
+              Food pairing: <br />
+              {food.join(", ")}
+            </p>
+
+            <p className="extra-content__tip">
+              Tips: <br />
+              {tip}
+            </p>
+            <ButtonViewMore
+              className="extra-content__button"
+              name="Return"
+              handleViewMore={handleClick}
+            />
           </div>
-          <ButtonViewMore name="Return" handleViewMore={handleClick} />
         </>
       )}
     </div>
