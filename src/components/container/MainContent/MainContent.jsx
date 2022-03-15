@@ -6,14 +6,14 @@ const MainContent = () => {
   const [beers, setBeers] = useState([]);
   const url = "https://api.punkapi.com/v2/beers";
 
-  const getBeers = async ([]) => {
+  const getBeers = async () => {
     const res = await fetch(url);
     const data = await res.json();
     setBeers(data);
   };
   useEffect(() => {
     getBeers(beers);
-  }, []);
+  }, [beers]);
 
   return <AllBeers beerArr={beers} />;
 };
