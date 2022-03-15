@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/brewdog-api-website/static/css/main.6928b51c.css",
-    "main.js": "/brewdog-api-website/static/js/main.38975039.js",
+    "main.css": "/brewdog-api-website/static/css/main.85cad934.css",
+    "main.js": "/brewdog-api-website/static/js/main.a77709c3.js",
     "static/js/787.344c3c18.chunk.js": "/brewdog-api-website/static/js/787.344c3c18.chunk.js",
     "static/media/brewdog-icon.png": "/brewdog-api-website/static/media/brewdog-icon.759f012f68ba0c6dc88b.png",
     "index.html": "/brewdog-api-website/index.html",
-    "main.6928b51c.css.map": "/brewdog-api-website/static/css/main.6928b51c.css.map",
-    "main.38975039.js.map": "/brewdog-api-website/static/js/main.38975039.js.map",
+    "main.85cad934.css.map": "/brewdog-api-website/static/css/main.85cad934.css.map",
+    "main.a77709c3.js.map": "/brewdog-api-website/static/js/main.a77709c3.js.map",
     "787.344c3c18.chunk.js.map": "/brewdog-api-website/static/js/787.344c3c18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6928b51c.css",
-    "static/js/main.38975039.js"
+    "static/css/main.85cad934.css",
+    "static/js/main.a77709c3.js"
   ]
 }
