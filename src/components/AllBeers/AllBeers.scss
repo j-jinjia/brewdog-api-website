@@ -9,6 +9,8 @@
         display: grid;
         grid-template-columns: repeat(4,1fr);
         align-items: flex-start;
+        justify-items: center;
         gap:1rem;
+        
     }
 }

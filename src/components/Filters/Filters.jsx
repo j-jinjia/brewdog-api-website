@@ -9,29 +9,32 @@ const Filters = (props) => {
   };
   return (
     <>
-      <h4 className="filters" onClick={handleDropDown}>
-        Filter
-      </h4>
-      {showDropDown && (
-        <div className="container">
-          <form>
-            <label htmlFor="High ABV">High ABV + 6.0% </label>
-            <input type="checkbox" name="abv" onClick={handleCheckABV} />
-          </form>
-          <form>
-            <label htmlFor="Classic Range">Classic Range</label>
-            <input
-              type="checkbox"
-              name="classic"
-              onClick={handleCheckClassic}
-            />
-          </form>
-          <form action="">
-            <label htmlFor="Acidity">Acidic less than 4 </label>
-            <input type="checkbox" name="ph" onClick={handleCheckPH} />
-          </form>
-        </div>
-      )}
+      <div className="container">
+        {!showDropDown && (
+          <h4 className="filters" onClick={handleDropDown}>
+            Filter
+          </h4>
+        )}
+        {showDropDown && (
+          <>
+            <h4 className="close-filters" onClick={handleDropDown}>
+              Close filters
+            </h4>
+            <form className="form-checkbox">
+              <input type="checkbox" name="abv" onClick={handleCheckABV} />
+              <label htmlFor="High ABV">High ABV + 6.0%</label>
+              <input
+                type="checkbox"
+                name="classic"
+                onClick={handleCheckClassic}
+              />
+              <label htmlFor="Classic Range">Classic Range </label>
+              <input type="checkbox" name="ph" onClick={handleCheckPH} />
+              <label htmlFor="Acidity">Acidic less than 4 </label>
+            </form>
+          </>
+        )}
+      </div>
     </>
   );
 };
