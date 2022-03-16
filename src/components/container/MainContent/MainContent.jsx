@@ -17,7 +17,7 @@ const MainContent = () => {
   };
 
   useEffect(() => {
-    getBeers(beers);
+    getBeers();
   }, []);
 
   const handleInput = (event) => {
