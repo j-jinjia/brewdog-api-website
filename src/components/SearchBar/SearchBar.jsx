@@ -1,18 +1,21 @@
 import React from "react";
 import "./SearchBar.scss";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+  const { label, searchTerm, handleInput } = props;
+
   return (
     <>
-      <div className="searchBar">
-        <label htmlFor="search"></label>
+      <form className="searchBar">
+        <label htmlFor={label}></label>
         <input
-          classname="searchBar__input"
+          className="searchBar__input"
           type="text"
-          name="search"
-          id="searchbar"
+          value={searchTerm}
+          name={label}
+          onInput={handleInput}
         />
-      </div>
+      </form>
     </>
   );
 };
