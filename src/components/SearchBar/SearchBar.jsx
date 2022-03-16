@@ -10,6 +10,7 @@ const SearchBar = (props) => {
         <label htmlFor={label}></label>
         <input
           className="searchBar__input"
+          placeholder="Search by name"
           type="text"
           value={searchTerm}
           name={label}
