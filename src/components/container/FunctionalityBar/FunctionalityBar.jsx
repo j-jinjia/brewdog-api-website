@@ -8,11 +8,12 @@ import BeersDisplay from "../../BeersDisplay/BeersDisplay";
 const FunctionalityBar = () => {
   return (
     <>
-      <div>FunctionalityBar</div>
-      <SearchBar />
-      <Filters />
-      <SortBy />
-      <BeersDisplay />
+      <div className="functionality-bar-container">
+        <SearchBar />
+        <Filters />
+        <SortBy />
+        <BeersDisplay />
+      </div>
     </>
   );
 };

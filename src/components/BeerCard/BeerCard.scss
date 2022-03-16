@@ -3,7 +3,7 @@
     margin:1rem;
     padding:1rem;
     width:fit-content;
-    height:fit-content;
+    max-width: 300px;
     display: flex;
     flex-direction: row;
     align-items:center ;
@@ -17,7 +17,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
-        row-gap:1rem;
+        row-gap:1.5rem;
         width:60vw;
         .content__name{
             grid-column:2 span;
@@ -32,7 +32,8 @@
     .extra-content{
         display: flex;
         flex-direction: column;
-        height: fit-content;
+        height:fit-content;
+        width: fit-content;
         gap:1rem;
         padding:1rem;
         .content-list{
@@ -41,6 +42,18 @@
             }
         }
     }
-
     
+    
+}
+@media only screen and (min-width: 1024px) {
+    .card{
+        height: 100%;
+        width:100%;
+        .extra-content{
+
+            height:100%;
+            width: 100%;
+    
+        }
+    }
 }
