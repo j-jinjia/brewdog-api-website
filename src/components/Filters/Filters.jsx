@@ -12,7 +12,7 @@ const Filters = (props) => {
       <div className="container">
         {!showDropDown && (
           <h4 className="filters" onClick={handleDropDown}>
-            Filter
+            Filters
           </h4>
         )}
         {showDropDown && (
@@ -30,7 +30,7 @@ const Filters = (props) => {
               />
               <label htmlFor="Classic Range">Classic Range </label>
               <input type="checkbox" name="ph" onClick={handleCheckPH} />
-              <label htmlFor="Acidity">Acidic less than 4 </label>
+              <label htmlFor="Acidity">Acidic (PH) less than 4 </label>
             </form>
           </>
         )}

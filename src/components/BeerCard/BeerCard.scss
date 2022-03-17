@@ -1,5 +1,5 @@
 .card{
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(#AEE1E1, #D3E0DC);
     margin:1rem;
     padding:1rem;
     width:fit-content;
@@ -9,6 +9,8 @@
     align-items:center ;
     justify-content: space-evenly;
     block-size: fit-content;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #aaaaaa;
     &__img{
         width:50px;
         height:auto;
@@ -37,9 +39,8 @@
         gap:1rem;
         padding:1rem;
         .content-list{
-            .content-list__title{
-                background-color: blue;
-            }
+            list-style: none;
+            gap: 1rem;
         }
     }
     

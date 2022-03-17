@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 *{
   box-sizing: border-box;
   margin:0;
   padding:0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Fjalla One', sans-serif;
   
 }
 
@@ -10,20 +11,20 @@ body{
   animation:animate 20s ease infinite;
 @keyframes animate {
     0% {
-        background-color: #6cb150;
+        background-color: #FFB6B9;
     }
     25% {
-        background-color: #00b0e0;
+        background-color: #FAE3D9;
     }
     
     50% {
-        background-color: #ffc04c;
+        background-color: #BBDED6;
     }
     75% {
-        background-color: #ec5739;
+        background-color: #8AC6D1;
     }
     100% {
-        background-color: #6cb150;
+        background-color: #FFB6B9;
     }
   }
 }

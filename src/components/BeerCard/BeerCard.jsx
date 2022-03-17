@@ -18,7 +18,6 @@ const BeerCard = (props) => {
   } = props;
   const [viewMore, setViewMore] = useState(true);
   const handleClick = () => {
-    console.log("clicked");
     setViewMore(!viewMore);
   };
   return (

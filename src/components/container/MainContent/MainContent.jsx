@@ -29,18 +29,18 @@ const MainContent = () => {
     const beerNameLower = beer.name.toLowerCase();
     return beerNameLower.includes(searchTerm);
   });
-  const handleCheckedABV = (e) => {
-    e.target.checked
+  const handleCheckedABV = (event) => {
+    event.target.checked
       ? setBeers(beers.filter((beer) => beer.abv > 6))
       : getBeers(beers);
   };
-  const handleCheckedClassic = (e) => {
-    e.target.checked
+  const handleCheckedClassic = (event) => {
+    event.target.checked
       ? setBeers(beers.filter((beer) => beer.first_brewed.split("/")[1] < 2010))
       : getBeers(beers);
   };
-  const handleCheckedPH = (e) => {
-    e.target.checked
+  const handleCheckedPH = (event) => {
+    event.target.checked
       ? setBeers(beers.filter((beer) => beer.ph < 4))
       : getBeers(beers);
   };

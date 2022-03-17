@@ -4,7 +4,9 @@
     justify-content: space-around;
     align-items: center;
     background-color: #ECECEC;
-
+    position:sticky;
+    top: 0;
+    z-index: 5;
     .navigation__logo{
         width:50px;
         height: auto;
@@ -12,5 +14,6 @@
     }
     .navigation__faq{
         cursor: pointer;
+
     }
 }
