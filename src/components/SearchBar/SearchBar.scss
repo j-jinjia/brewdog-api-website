@@ -1,7 +1,7 @@
 .searchBar{
     .searchBar__input{
-        width:fit-content;
-        font-size: 2rem;;
+        width:min-content;
+        font-size: 1.5rem;;
         padding-left: 10px;
         &:focus{
             border: 2px solid   black;

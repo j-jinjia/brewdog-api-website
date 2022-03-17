@@ -1,12 +1,60 @@
 .help{
-    position:absolute;
-    background-color: pink;
+    position:fixed;
+    background-color: #ECECEC;
     top:0;
     bottom: 0;
     left: 0;
     right:0;
-    z-index: 5;
+    z-index: 10;
+    height: 100vh;
     &__cross{
         cursor: pointer;
+        position:relative;
+        top:0;
+        left: 400px;
+        
+    }
+    .content{
+        padding:1rem;
+        margin: 1rem;
+        &__iamge{
+            width: 60px;
+        }
     }
 }
+@media only screen and (min-width: 768px) {
+    .help{
+        &__cross{
+
+            left: 700px;
+            
+        }
+        .content{
+            text-align: center;
+
+        }
+    }
+  }
+@media only screen and (min-width: 1024px) {
+    .help{
+        &__cross{
+
+            left: 1000px;
+            
+        }
+        .content{
+            &__title{
+                font-size: 4rem;
+            }
+            &__subtitle{
+                font-size: 3rem;
+            }
+            &__content{
+                font-size: 1.5rem;
+            }
+            text-align: center;
+            margin:2rem;
+
+        }
+    }
+  }
