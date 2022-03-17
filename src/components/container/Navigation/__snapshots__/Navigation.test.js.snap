@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match beer card component snapshot 1`] = `
+<div>
+  <article
+    class="navigation"
+  >
+    <img
+      alt="brewdog-icon"
+      class="navigation__logo"
+      src="brewdog-icon.png"
+    />
+    <h1>
+      BREWDOG
+    </h1>
+    <h2
+      class="navigation__faq"
+      tabindex="0 "
+    >
+      HELP
+    </h2>
+  </article>
+</div>
+`;

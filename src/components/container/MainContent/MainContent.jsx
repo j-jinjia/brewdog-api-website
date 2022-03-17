@@ -27,6 +27,7 @@ const MainContent = () => {
 
   const filteredBeers = beers.filter((beer) => {
     const beerNameLower = beer.name.toLowerCase();
+
     return beerNameLower.includes(searchTerm);
   });
   const handleCheckedABV = (event) => {

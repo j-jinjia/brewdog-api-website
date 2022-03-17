@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match beer card component snapshot 1`] = `
+<div>
+  <article
+    class="card"
+  >
+    <img
+      class="card__img"
+    />
+    <div
+      class="content"
+    >
+      <h3
+        class="content__name"
+      />
+      <p
+        class="content__tag"
+      />
+      <p
+        class="content__brew-year"
+      >
+        Brew Year: 
+        <br />
+         
+      </p>
+      <p
+        class="content__abv"
+      >
+        ABV: 
+        <br />
+         
+        %
+      </p>
+      <p
+        class="content__ph"
+      >
+        PH:
+        <br />
+         
+      </p>
+      <button
+        class="button"
+      >
+        View More
+      </button>
+    </div>
+  </article>
+</div>
+`;

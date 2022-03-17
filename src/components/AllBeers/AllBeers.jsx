@@ -4,7 +4,7 @@ import BeerCard from "../BeerCard/BeerCard";
 
 const AllBeers = ({ beerArr }) => {
   return (
-    <div className="card-container">
+    <article className="card-container">
       {beerArr.map((beer) => {
         return (
           <BeerCard
@@ -22,7 +22,7 @@ const AllBeers = ({ beerArr }) => {
           />
         );
       })}
-    </div>
+    </article>
   );
 };
 

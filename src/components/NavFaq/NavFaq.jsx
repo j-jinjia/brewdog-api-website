@@ -4,7 +4,7 @@ import cross from "../../assets/images/black-cross.png";
 import warning from "../../assets/images/drink-responsably.png";
 const NavFaq = ({ handleFaqClick }) => {
   return (
-    <div className="help">
+    <article className="help">
       <img
         className="help__cross"
         src={cross}
@@ -26,7 +26,7 @@ const NavFaq = ({ handleFaqClick }) => {
         </p>
         <img src={warning} alt="drink-responsably" className="content-image" />
       </div>
-    </div>
+    </article>
   );
 };
 

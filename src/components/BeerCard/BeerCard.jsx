@@ -21,7 +21,7 @@ const BeerCard = (props) => {
     setViewMore(!viewMore);
   };
   return (
-    <div className="card">
+    <article className="card">
       {viewMore && (
         <>
           <img className="card__img" src={image} alt={name} />
@@ -44,7 +44,7 @@ const BeerCard = (props) => {
       )}
       {!viewMore && (
         <>
-          <div className="extra-content">
+          <article className="extra-content">
             <ul className="content-list">
               <li>
                 <h3 className="content-list__title">Product Description</h3>
@@ -64,10 +64,10 @@ const BeerCard = (props) => {
               </li>
             </ul>
             <ButtonViewMore name="Return" handleViewMore={handleClick} />
-          </div>
+          </article>
         </>
       )}
-    </div>
+    </article>
   );
 };
 
