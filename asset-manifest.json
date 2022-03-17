@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/brewdog-api-website/static/css/main.e34891c6.css",
-    "main.js": "/brewdog-api-website/static/js/main.ae419b60.js",
+    "main.js": "/brewdog-api-website/static/js/main.0250fb17.js",
     "static/js/787.344c3c18.chunk.js": "/brewdog-api-website/static/js/787.344c3c18.chunk.js",
     "static/media/brewdog-icon.png": "/brewdog-api-website/static/media/brewdog-icon.759f012f68ba0c6dc88b.png",
     "static/media/drink-responsably.png": "/brewdog-api-website/static/media/drink-responsably.e1f69dfa08957dc6831e.png",
     "index.html": "/brewdog-api-website/index.html",
     "main.e34891c6.css.map": "/brewdog-api-website/static/css/main.e34891c6.css.map",
-    "main.ae419b60.js.map": "/brewdog-api-website/static/js/main.ae419b60.js.map",
+    "main.0250fb17.js.map": "/brewdog-api-website/static/js/main.0250fb17.js.map",
     "787.344c3c18.chunk.js.map": "/brewdog-api-website/static/js/787.344c3c18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e34891c6.css",
-    "static/js/main.ae419b60.js"
+    "static/js/main.0250fb17.js"
   ]
 }
