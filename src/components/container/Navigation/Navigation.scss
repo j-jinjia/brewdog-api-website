@@ -14,6 +14,10 @@
     }
     .navigation__faq{
         cursor: pointer;
+        &:hover{
+
+            text-decoration: underline double;
+        } 
 
     }
 }

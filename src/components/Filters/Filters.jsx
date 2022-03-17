@@ -11,7 +11,7 @@ const Filters = (props) => {
     <>
       <div className="container">
         {!showDropDown && (
-          <h4 className="filters" onClick={handleDropDown}>
+          <h4 className="filters" onClick={handleDropDown} tabIndex="2">
             Filters
           </h4>
         )}

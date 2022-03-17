@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.scss";
+import { FcSearch } from "react-icons/fc";
 
 const SearchBar = (props) => {
   const { label, searchTerm, handleInput } = props;
@@ -7,7 +8,10 @@ const SearchBar = (props) => {
   return (
     <>
       <form className="searchBar">
-        <label htmlFor={label}></label>
+        <label htmlFor={label}>
+          <FcSearch />
+        </label>
+
         <input
           className="searchBar__input"
           placeholder="Search by name"
@@ -15,6 +19,8 @@ const SearchBar = (props) => {
           value={searchTerm}
           name={label}
           onInput={handleInput}
+          autoFocus
+          tabIndex="1"
         />
       </form>
     </>

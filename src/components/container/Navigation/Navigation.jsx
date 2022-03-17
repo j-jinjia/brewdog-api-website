@@ -15,7 +15,7 @@ const Navigation = () => {
       {showFaq && <NavFaq handleFaqClick={handleFaqClick} />}
       <img src={icon} alt="brewdog-icon" className="navigation__logo" />
       <h1>BREWDOG</h1>
-      <h2 className="navigation__faq" onClick={handleFaqClick}>
+      <h2 className="navigation__faq" onClick={handleFaqClick} tabIndex="0 ">
         HELP
       </h2>
     </div>
