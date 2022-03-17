@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/brewdog-api-website/static/css/main.638789ad.css",
-    "main.js": "/brewdog-api-website/static/js/main.a0ad3445.js",
+    "main.css": "/brewdog-api-website/static/css/main.58acba9e.css",
+    "main.js": "/brewdog-api-website/static/js/main.ae419b60.js",
     "static/js/787.344c3c18.chunk.js": "/brewdog-api-website/static/js/787.344c3c18.chunk.js",
     "static/media/brewdog-icon.png": "/brewdog-api-website/static/media/brewdog-icon.759f012f68ba0c6dc88b.png",
     "static/media/drink-responsably.png": "/brewdog-api-website/static/media/drink-responsably.e1f69dfa08957dc6831e.png",
     "index.html": "/brewdog-api-website/index.html",
-    "main.638789ad.css.map": "/brewdog-api-website/static/css/main.638789ad.css.map",
-    "main.a0ad3445.js.map": "/brewdog-api-website/static/js/main.a0ad3445.js.map",
+    "main.58acba9e.css.map": "/brewdog-api-website/static/css/main.58acba9e.css.map",
+    "main.ae419b60.js.map": "/brewdog-api-website/static/js/main.ae419b60.js.map",
     "787.344c3c18.chunk.js.map": "/brewdog-api-website/static/js/787.344c3c18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.638789ad.css",
-    "static/js/main.a0ad3445.js"
+    "static/css/main.58acba9e.css",
+    "static/js/main.ae419b60.js"
   ]
 }
