@@ -1,60 +1,46 @@
-.card{
-    background: linear-gradient(#AEE1E1, #D3E0DC);
-    margin:1rem;
-    padding:1rem;
-    width:fit-content;
-    max-width: 300px;
+.card {
+  background: linear-gradient(#aee1e1, #d3e0dc);
+  margin: 1rem;
+  padding: 1rem;
+  width: 290px;
+  height: 290px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  overflow: auto;
+  &__img {
+    width: 50px;
+    height: auto;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 1.5rem;
+    width: 60vw;
+    .content__name {
+      grid-column: 2 span;
+      text-align: center;
+    }
+    .content__tag {
+      grid-column: 2 span;
+      text-align: center;
+    }
+  }
+  .extra-content {
     display: flex;
-    flex-direction: row;
-    align-items:center ;
-    justify-content: space-evenly;
-    block-size: fit-content;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    &__img{
-        width:50px;
-        height:auto;
+    flex-direction: column;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    gap: 1rem;
+    padding: 1rem;
+    .content-list {
+      list-style: none;
+      gap: 1rem;
     }
-    .content{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        row-gap:1.5rem;
-        width:60vw;
-        .content__name{
-            grid-column:2 span;
-            text-align: center;
-        }
-        .content__tag{
-            grid-column:2 span;
-            text-align: center;
-
-        }
-    }
-    .extra-content{
-        display: flex;
-        flex-direction: column;
-        height:fit-content;
-        width: fit-content;
-        gap:1rem;
-        padding:1rem;
-        .content-list{
-            list-style: none;
-            gap: 1rem;
-        }
-    }
-    
-    
-}
-@media only screen and (min-width: 1024px) {
-    .card{
-        height: 100%;
-        width:100%;
-        .extra-content{
-
-            height:100%;
-            width: 100%;
-    
-        }
-    }
+  }
 }
