@@ -43,29 +43,27 @@ const BeerCard = (props) => {
         </>
       )}
       {!viewMore && (
-        <>
-          <article className="extra-content">
-            <ul className="content-list">
-              <li>
-                <h3 className="content-list__title">Product Description</h3>
-                <p>{description}</p>
-              </li>
-              <li>
-                <h3 className="content-list__title">Ingredients</h3>
-                <p>The ingredients are : {ingredients.join(", ")}</p>
-              </li>
-              <li>
-                <h3 className="content-list__title">Food Pairing</h3>
-                <p>{food.join(" or ")}</p>
-              </li>
-              <li>
-                <h3 className="content-list__title">Tips</h3>
-                <p>{tip}</p>
-              </li>
-            </ul>
-            <ButtonViewMore name="Return" handleViewMore={handleClick} />
-          </article>
-        </>
+        <article className="extra-content">
+          <ul className="content-list">
+            <li>
+              <h3 className="content-list__title">Product Description</h3>
+              <p>{description}</p>
+            </li>
+            <li>
+              <h3 className="content-list__title">Ingredients</h3>
+              <p>The ingredients are : {ingredients.join(", ")}</p>
+            </li>
+            <li>
+              <h3 className="content-list__title">Food Pairing</h3>
+              <p>{food.join(" or ")}</p>
+            </li>
+            <li>
+              <h3 className="content-list__title">Tips</h3>
+              <p>{tip}</p>
+            </li>
+          </ul>
+          <ButtonViewMore name="Return" handleViewMore={handleClick} />
+        </article>
       )}
     </article>
   );
