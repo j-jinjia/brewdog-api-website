@@ -39,3 +39,9 @@ In this website you can:
 # Preview
 
 ![BrewDog API desktop](./src/assets/ScreenShots/brewdog.png)
+
+# Improvements
+- Handle multiple checkboxes
+- Overall Stylings
+- Add more filters(a slider)
+- Add a display gird/column feature
